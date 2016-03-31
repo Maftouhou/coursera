@@ -14,3 +14,37 @@ _____________________________________
 --------------
 
 - ng-controller : initialize (and create an istance of ) a controller to use in the DOM. meny controllers can be used for defferentes taskes. To define the element that should be used to include content from controller, we use the ng-controller directive to initialize this element in order to recieve content defined on that controller. 
+variables inside that controller can be colled using the controller instance, if any, dot the variable name. 
+
+---------------
+
+GRANT Task runner 
+---------------
+- Grunt globbing patterns : 
+  * : match any number of char except "/";
+  ? : match a single char except "/";
+  ** : match any number of char including "/";
+  {} : take in count any of the elements separeted by comma, that much; 
+  ! : if it doesn't mutch the pattern, exclude from consideration;
+
+
+Some Grunt methodes : 
+----------------------------
+- copy() : specify parameter "dist" that takes differentes parameters like : 
+  - src : for the source (can take grunt globbing patterns)
+  - dest : for the destination
+
+- clear() : take parameter "build" to clean the source
+
+- registerTask('build', ['tast1', '...', 'taskn']) : specify task running order 
+
+Grunt-usemin : configure css and js tasks
+  - Grunt-usemin workflow : useminPrepare=>concat=>cssmin=>uglify=>filerev=>usemin
+  - filerev : force uncaches files (css and js) in order to suply the newest version of file, if any modification made. it provide an automatic generated code on the name of the file at any time the file is resived
+  - filerev options : encode 'Utf8', algoritm 'md5', length '20';
+
+
+
+Technical word : 
+===============================
+- Static code analysis : 
