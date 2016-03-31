@@ -1,0 +1,16 @@
+Algular App concept
+====================================
+
+Simple initialize Angular Application 
+_____________________________________
+- ng-app : init application without controller
+- ng-app="Name" : init application with controller
+		meny controller can be used on the same application 
+
+- ng-init and ng-repeat : initialize an element aimed to de repeated.
+- ng-src : define a source of element
+- ng-model="NameOfElement" : in the case of an input, used to link the element to report its content. 
+
+--------------
+
+- ng-controller : initialize (and create an istance of ) a controller to use in the DOM. meny controllers can be used for defferentes taskes. To define the element that should be used to include content from controller, we use the ng-controller directive to initialize this element in order to recieve content defined on that controller. 
