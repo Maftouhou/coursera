@@ -1,0 +1,746 @@
+/* BODY Styles
+Body  content goes here */
+
+@font-face {
+    font-family: 'FTVHeldustryRegular';
+    src: url('fonts/regular/ftvHeldustryRegular.eot');
+    src: url('fonts/regular/ftvHeldustryRegular.eot') format('embedded-opentype'),
+         url('fonts/regular/ftvHeldustryRegular.svg') format('svg'),
+         url('fonts/regular/ftvHeldustryRegular.ttf') format('truetype'),
+         url('fonts/regular/ftvHeldustryRegular.woff') format('woff'),
+         url('fonts/regular/ftvHeldustryRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FTVHeldustryDemi';
+    src: url('fonts/demi/ftvHeldustryDemi.eot');
+    src: url('fonts/demi/ftvHeldustryDemi.eot') format('embedded-opentype'),
+         url('fonts/demi/ftvHeldustryDemi.svg') format('svg'),
+         url('fonts/demi/ftvHeldustryDemi.ttf') format('truetype'),
+         url('fonts/demi/ftvHeldustryDemi.woff') format('woff'),
+         url('fonts/demi/ftvHeldustryDemi.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FTVHeldustryBlackIta';
+    src: url('fonts/blackitalic/ftvHeldustryBlackItalic.eot');
+    src: url('fonts/blackitalic/ftvHeldustryBlackItalic.eot') format('embedded-opentype'),
+         url('fonts/blackitalic/ftvHeldustryBlackItalic.svg') format('svg'),
+         url('fonts/blackitalic/ftvHeldustryBlackItalic.ttf') format('truetype'),
+         url('fonts/blackitalic/ftvHeldustryBlackItalic.woff') format('woff'),
+         url('fonts/blackitalic/ftvHeldustryBlackItalic.woff2') format('woff2');
+}
+.wrapper section, .template div {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    box-shadow: 0px 0px 25px $shadowcolor;
+    font-family: FTVHeldustryRegular;
+    height: auto;
+    margin: auto;
+    width: 1000px;
+    /*width: 100%;*/
+        
+    [type=checkbox]{
+        height: 17px;
+        width: 17px;
+    }
+    
+    p {
+        line-height: 24px;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+}
+
+.template {
+    .evenSection{
+        background-color: $sectionEvenBg;
+    }
+
+    .selectedRegion{
+        background-color: $selectedRegionBg;
+        color: $btnTxt;
+        display: inline-block;
+        font-size: 16px;
+        height: 35px;
+        margin: 5px;
+        padding: 10px 5px;
+        vertical-align: bottom;
+        width: auto;
+
+        &:hover{
+            cursor: pointer;
+            &:after{
+                color:$error;
+                content:"x ";
+                background-color: $btnTxt;
+                border-radius: 50%;
+                height: 5px;
+                width:5px;
+            }
+        }
+    }
+    
+    section{
+        min-height: 218px;
+        height: auto;
+
+        div {
+            &.nlpresentation{
+                display: inline-block;
+                margin-left: 147px;
+                margin-right: 55px;
+                margin-top: 56px;
+                vertical-align: top;
+
+                div{
+                    &:nth-child(1){
+                        display: inline-block;
+                        float: left;
+                        vertical-align: top;
+                    }
+
+                    &:nth-child(2){
+                        display: inline-block;
+                        margin-left: 53px;
+                        max-width: 410px;
+                        vertical-align: top;
+                         float: right;
+
+                        img {
+                            padding-bottom: 12px;
+                        }
+
+                        p{
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                            line-height: 20px;
+                        }
+
+                        span.btnDesabo{
+                            border: $error solid 1px;
+                            color: $error;
+                            cursor: pointer;
+                            display: inline-block;
+                            font-size: 16px;
+                            height: 28px;
+                            line-height: 28px;
+                            text-align: center;
+                            width: 150px;
+                        }
+
+                        span.btnDesabo:hover,
+                        span.btnDesabo.active {
+                            background-color: $error;
+                            border: $btnTxt solid 1px;
+                            color: $btnTxt;
+                        }
+
+                        .descriptionDesabo {
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        
+            &.nlaction{
+                display: inline-block;
+                float: right;
+                margin: 80px 95px 0 0;
+
+                .subscribe, .subscribed, .preview, .unsubscribed {
+                    background: url(../img/sprite.png) -10px -9px no-repeat;
+                    border: 0;
+                    cursor: pointer;
+                    float: left;
+                    height: 56px;
+                    margin: 5px;
+                    width: 56px;
+                }
+                .preview:hover {
+                    background: url(../img/sprite.png) -72px -9px no-repeat;
+                }
+                .subscribe {
+                    background: url(../img/sprite.png) -10px -133px no-repeat;
+                }
+                .subscribe:hover {
+                    background: url(../img/sprite.png) -10px -71px no-repeat;
+                }
+                
+                .subscribed{
+                    background: url(../img/sprite.png) -10px -71px no-repeat;
+                    &:hover{
+                        background: url(../img/sprite.png) -72px -71px no-repeat;
+                    }
+                }
+                
+                .unsubscribed {
+                    background: url(../img/sprite.png) -72px -71px no-repeat;
+                }
+            }
+        }
+            
+        /*Start Build*/
+        
+        .regionGroup{
+            margin: 0 100px 0px 145px;
+            padding-bottom: 10px;
+
+            .listSelectedRegion{
+                margin: 0 0 0 160px;
+                height: auto;
+                width: 520px;
+                float: left;
+
+                .ragNameWrapper{
+                    width: auto;
+                    cursor: pointer;
+                    .selectedRegionBlock{
+                        color: $noire;
+                        border: 1px solid $lightGray;
+                        display: inline-block;
+                        float: left;
+                        height: 23px;
+                        margin: 0 15px 15px 0;
+                        padding: 4px;
+                        font-size: 13px;
+                    }
+
+                    .closRegion{
+                        border: 1px solid $error;
+                        border-radius: 50%;
+                        background-color: $btnTxt;
+                        color: $error;
+                        float: left;
+                        font-size: 10px;
+                        height: auto;
+                        margin: -5px 0 0 -24px;
+                        padding: 1px;
+                        text-align: center;
+                        width: 15px;
+                        position: relative;
+
+                        &:hover{
+                            background-color: $error;
+                            color: $btnTxt;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            div.collapseBtn{
+                background-color: $selectedRegionBg;
+                color: $btnTxt;
+                cursor: pointer;
+                clear: both;
+                display:block;
+                height: 40px;
+                line-height: 24px;
+                margin: 0 0 20px 160px; 
+                padding: 10px;
+                width: 220px;
+
+                div.toggleSign{
+                    border: 1px solid $btnTxt;
+                    color: $btnTxt;
+                    float: right;
+                    font-size: 18px;
+                    height: 22px;
+                    line-height: 15px;
+                    margin-left: 8px;
+                    padding-top: 1px;
+                    text-align: center;
+                    width: 22px;
+                }
+            }
+
+            #premiereref{
+                background-color: #FEC901;
+            }
+            
+            
+
+            div.collapseBlock{               
+                clear: both;
+                padding:20px 0;
+               
+                .regionName{
+                    display: inline-block;
+                    width: 24%;
+                    margin-bottom: 10px;
+                    
+                    .checkboxWrap{
+                        
+                    }
+
+                    label {
+                        font-size: 13px;
+                        position: relative;
+                        bottom: 4px;
+                    }
+                }
+                
+                p.selectMssg{
+                    color: #888;
+                    font-size: 14px;
+                    font-family: FTVHeldustryRegular;
+                    position: relative;
+                    bottom: 3px;
+                    span{
+                        float: right;
+                        font-size: 13px;
+                        color: $lightGray;
+                        cursor: pointer;
+                        span{
+                            color: $noire;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .checkAllText{
+                    color: $lightGray;
+                    font-size: 14px;
+                    position: relative;
+                    bottom: 3px;
+                }
+
+                form.selectRegionList{
+                    border-top: 1px solid $borderColor;
+                    padding-top: 12px;
+                    margin-top: 12px;
+                }
+            }
+        }
+        /*end build*/
+        
+        form.unsubscribeForm {
+            border-top: 1px solid $borderColor;
+            margin-top:25px;
+            padding: 12px 0 60px 300px;
+            display: none;
+            
+            p {
+                margin-bottom: 10px;
+
+                [type=radio]{
+                    background-color: $btnTxt;
+                    border:1px solid $btnBackground;
+                }
+                span{
+                    color: $error;
+                }
+                &.unsubscribeReason{
+                    margin-bottom: 40px;
+                }
+            }
+
+            label{
+                color: $lightGray;
+                font-size: 14px;
+                padding-left: 10px;
+            }
+
+            textarea {
+                border: 1px solid $inputFieldBorder;
+                display: none;
+                height: 100px;
+                margin-top: 10px;
+                width: 550px;
+            }
+
+            .formBtnGroup{
+                display: inline-block;
+                float: right;
+                margin-right: 98px;
+
+                .btnSeDesabonner{
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+        &#premiere {
+            .regionName{
+                width: 26%;
+            }
+        }
+        
+        &#infoOffre {
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            min-height: 180px !important;
+            height: 180px !important;
+            
+            div {
+                padding-bottom:15px;
+                &:nth-child(2){
+                    padding:0;
+                    span{
+                        padding:0;                    
+                    }
+                }
+                &:last-of-type{
+                    font-size: 12px;
+                    height: 15px;
+                    padding:0;
+                    text-align: right;
+                }
+            }
+            .descriptionOffre{
+                color: $btnBackground;
+                display: inline-block;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            
+            .optionsOffre{
+                float: right;
+                label, [type=radio]{
+                    vertical-align: top;
+                }
+            }
+
+            form{
+                margin-left: 300px;
+                margin-right: 100px;
+                margin-top:28px;
+                
+                [type=button]{
+                    color: $btnTxt;
+                    border: 0px;
+                    height: 42px;
+                    background: $btnBackground; 
+                    float: right;
+                    font-size: 16px;
+                    line-height: 42px;
+                    margin-right: 5px;
+                    margin-top: 15px;
+                    width: 104px;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+            
+            .textError {
+                color: red;
+            }    
+        }
+
+        &#messageGestionOffre {
+            min-height: 0px;
+        }
+
+    }
+}
+
+section{
+
+    .btnAnnuler, .btnAnnulerOffre, .btnValider, .btnValiderOffre, .btnSeDesabonner {
+        background: $cancelBtn;
+        border: 0;
+        color: $btnTxt;
+        cursor: pointer;
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+        width: 104px;
+    }
+    .btnValider {
+        width: 141px;
+    }
+    .btnValider:hover {
+        width: 141px;
+    }
+    .btnSeDesabonner {
+        background: $error;
+        width: 141px;
+    }
+    .btnSeDesabonner:hover {
+        background: $error;
+        width: 141px;
+    }
+
+    &#headsection{
+        background-color: $headerSectionColor;
+        height: auto;
+        min-height: 131px;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        
+        span{
+            border-top: 1px solid white;
+            display: inline-block;
+            height: 8px;
+            width: 60px;
+            margin: 0 19px;
+        }
+
+        h1, h2{
+            color: $btnTxt;
+            font-size: 32px;
+            font-family: FTVHeldustryRegular;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0 auto;
+            display: inline-block;
+            text-align: center;
+            
+
+            &:before{
+
+            }
+            &:after{
+                
+            }
+        }
+    }
+
+    &#signupSection{
+        height: auto;
+        padding-top: 54px;
+        min-height: 150px;
+        width: 100%;
+        border-bottom: 1px solid $borderColor;
+        font-size: 16px;
+
+        form#usrSignup {
+            margin: 0 auto;
+            min-width: 360px;
+            text-align: center;
+            width: 36%;
+            
+            [type=text]{
+                background-color: $emailInputColor;
+                border: 0;
+                color: $btnBackground;
+                float: left;                
+                height: 42px;
+                padding-left: 12px;
+                width: 244px;
+            }
+
+            [type=submit]{
+                background-color: $btnBackground;
+                border: 0px;
+                color: $btnTxt;
+                float: left;                
+                height: 42px;
+                width: 104px;
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div{
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        form#usrSignout {
+            text-align: center;
+
+            [type=submit]{
+                background-color: $btnBackground;
+                border: 0px;
+                color: $btnTxt;                
+                height: 42px;
+                width: 153px;
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        #displayUsrEmail,
+        #usrSignout {
+            display: none;
+            font-weight: bold;
+        }
+    }
+    
+    &.nlViewPortSection{
+        min-height: 0;
+            button{
+                background: url(../img/closeIcon.png) no-repeat;
+                border: 0;
+                color: black;
+                cursor: pointer;
+                display: block;
+                float: right;
+                font-size: 70px;
+                height: 30px;
+                margin: 5px 5px 15px 0;
+                width: 30px;
+            }
+            
+        div.nlViewPort{
+            float: left;
+            left: 0 !important;
+            margin-left: 200px;
+            position: static !important;
+            margin-top:40px;
+            
+            img {
+                display: block;
+                float: left;
+            }
+        }
+    }
+    
+    &#mentionsLegale {
+        min-height: 180px;
+        padding: 1px;
+        p {
+            margin: 50px;
+            color: $lightGray;
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+}
+
+/* Classe suplementaire pour la gestion des erreur 
+avec les action JS */
+
+/*Gestion des connection*/
+.connectOk,
+.messageGestionOffreOk {
+    background-color: $success;
+    color: $btnTxt;
+    font-size: 16px;
+    height: 48px !important;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.connectErreur,
+.messageGestionOffreErreur {
+    background-color: $errorBar;
+    color: $btnTxt;
+    font-size: 16px;
+    height: 48px !important;
+    padding-top: 15px;
+    text-align: center;
+    text-align: center;
+}
+
+/* Gestion des champ des text */
+.inputTextErreur{
+    border-color: $error;
+}
+
+/* Gestion des texte*/
+.textErreur, 
+.labelErreur{
+    color: $error;
+}
+/*
+.infoOffreError{
+    border-top: 1px solid $error !important;
+}*/
+
+input:focus {
+    outline:none;
+}
+
+*:focus {
+    outline:none;
+}
+
+.closRegionFocus{
+    background-color: $error !important;
+    color: $btnTxt !important;
+    cursor: pointer;
+}
+
+.previewNl{
+    width: 1000px;
+}
+
+.padTrig{
+    padding-top: 45px !important;
+}
+
+#modal_confirmation{
+    background: #fff;
+    text-align: center;
+    width: 500px;
+    padding: 0 0 5px 0;
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    font-weight: 600;
+    border: 10px solid #efefef;
+    font-family: Arial;
+    display: none;
+
+    p{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        color: #000;
+        text-align: left;
+    }
+
+    span{
+        color: #458d0c;
+    }
+
+    .message{
+        margin: 50px;
+        position: relative;
+        float: left;
+    }
+
+    .header{
+        float: left;
+        width: 100%;
+        height: 58px;
+        background-color: #4d4d4d;
+
+        p{
+            margin: 0 0 0 30px;
+            padding: 0;
+            padding-top: 18px;
+            color: #fff;
+            font-size: 26px;
+            font-weight: normal;
+        }
+
+        span{
+            color: #fff;
+            font-weight: bold;
+        }
+
+        a{
+            float: right;
+            margin: -35px 5px 0 0px;
+        }
+    }
+}
+
+#eShowPubTop{
+    display: none;
+}

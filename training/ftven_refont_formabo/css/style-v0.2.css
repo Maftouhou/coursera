@@ -1,0 +1,381 @@
+html {
+    /*background: #c00;*/
+}
+
+.ftven_alt {
+    display: none;
+}
+
+#ftven_formabo {
+    color: #2e2e2e;
+    font-family:Arial,Helvetica,sans-serif;
+    padding: 0;
+    height: 496px;
+    width: 680px;
+    padding-top: 73px;
+    box-sizing: content-box !important;
+    line-height: 1.1 !important;
+    margin-top: 40px
+}
+
+#ftven_formabo_header {
+    height: 64px;
+    width: 680px;
+}
+
+#ftven_formabo_culturebox {
+    background: #2e2e2e url(../img/logos/logo_culture_box.jpg) right top no-repeat;
+}
+#ftven_formabo_allo_docteur {
+    background: #2e2e2e url(../img/logos/logo_allo_docteur.jpg) right top no-repeat;
+}
+#ftven_formabo_france3 {
+    background: #2e2e2e url(../img/logos/logo_france3.jpg) right top no-repeat;
+}
+#ftven_formabo_francetv {
+    background: #2e2e2e url(../img/logos/logo_ftv.jpg) right top no-repeat;
+}
+#ftven_formabo_francetv_education {
+    background: #2e2e2e url(../img/logos/logo_ftv_educ.jpg) right top no-repeat;
+}
+
+#ftven_formabo_main_content {
+    height: 630px;
+    background-color: #fff;
+    width: 680px;
+}
+
+.ftven_main_logo {
+    float: right;
+    height: 64px;
+    width: 360px;
+}
+
+#ftven_formabo_title h1 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 64px;
+    text-indent: 25px;
+    text-transform: none;
+    margin: 0;
+}
+#ftven_formabo_title {
+    float: left;
+    background-color: #2e2e2e;;
+    width: 320px;
+}
+#ftven_formabo_logo {
+    background: #fff;
+    float: left;
+    height: 64px;
+    position: relative;
+    width: 253px;
+}
+
+
+#ftven_formabo_close {
+    background: url(../img/ftven_close.png) 0 0 no-repeat;
+    border: 0;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    width: 35px;
+    right: 40px;
+    top: 0px;
+    cursor: pointer;
+}
+
+
+#ftven_formabo_content {
+    background: #ffffff;
+    height: 600px;
+    width: 660px;
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.ftven_formabo_content_1NL {
+    background: #ffffff;
+    font-size: 14px;
+    height: 270px;
+    width: 680px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.ftven_formabo_option{
+    margin-left: 20px;
+}
+
+.ftven_formabo_content_2NL {
+    background: #ffffff;
+    font-size: 14px;
+    height: 270px;
+    width: 680px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+
+#ftven_formabo_content #leftNewsletter, #rightNewsletter
+{
+    float:left;
+    background: #f5f5f5;
+    height: 400px;
+    width: 280px;
+    margin-right:20px;
+    margin-bottom:20px;
+    padding:10px;
+    text-align:center;
+}
+#ftven_formabo_content .title
+{
+    width: 280px;
+    color:#000;
+    font-size:14px;
+    font-weight:bold;
+    display:block;
+
+
+}
+#ftven_formabo_content .desciption
+{
+    width: 280px;
+    color:#877e86;
+    font-size:12px;
+    display:block;
+}
+#ftven_formabo_form .titre
+{
+    display:block;
+    width:650px; height:30px;
+    margin:0;
+    margin-bottom:6px;
+    clear: both;
+}
+
+#ftven_formabo_form label
+{
+    color:#877e86;
+    font-size:12px;
+    font-weight:bold;
+    float:left;
+
+}
+#ftven_formabo_form .labelcheckbox
+{
+    float:right;
+    width:70px;
+    margin:-40px;
+}
+
+.ftven_formabo_picture {
+    float: left;
+    height: 270px;
+    width: 230px;
+}
+.ftven_formabo_picture img {
+    margin: 50px 0 0 36px;
+}
+.ftven_formabo_nl_preview {
+    width:  200px;
+    height: 270px;
+    padding: 10px 0 10px 0;
+}
+
+.ftven_collecte_info {
+    font-size: 11px;
+    color: #707070;
+    font: arial, helvetica, sans-serif;
+    background-color: #2e2e2e;
+    padding: 16px 36px 34px;
+    height: 80px;
+    box-sizing: content-box !important;
+}
+
+
+.ftven_formabo_subscription {
+    float: left;
+    width: 425px;
+    margin: 60px 0 0;
+}
+
+.ftven_formabo_product_name {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+    text-indent: 17px;
+}
+.ftven_formabo_product_descritpion {
+    font-size: 13px;
+    font-family: arial, helvetica, sans-serif;
+    height: 80px;
+    width: 313px;
+    padding: 26px 14px 0;
+}
+
+.ftven_formabo_product_descritpion_with_title {
+    height: 84px;
+    font-size: 13px;
+    font-family: arial, helvetica, sans-serif;
+    width: 313px;
+    padding: 0 12px 0 14px;
+}
+
+#ftven_formabo_form {
+
+}
+#ftven_formabo_form_email {
+    background-color: #f5f5f5;
+    border: 0 solid #dadada;
+    float: left;
+    height: 50px;
+    padding: 0 0 0 10px;
+    width: 270px;
+}
+
+.ftven_formabo_form_submit_finish {
+    opacity: 0.4;
+    background-color: #2e2e2e;
+}
+.ftven_formabo_form_submit_finish:hover {
+    background-color: #2e2e2e !important;
+}
+
+.ftven_formabo_mail_button{
+    float:left;
+}
+.ftven_formabo_form_submit_link {
+    background: url("../img/submit_ico.png") no-repeat scroll 93% center #2e2e2e;
+    border: 0;
+    color: #ffffff !important;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 48px;
+    text-decoration: none;
+    width: 100px;
+    padding-left: 20px;
+    box-sizing: content-box !important;
+}
+.ftven_formabo_form_submit_link:hover {
+    background-color: #5d5b5b;
+}
+.ftven_formabo_email_bloc_submit1NL {
+    padding: 0 0 0 15px;
+}
+.ftven_formabo_email_bloc_submit2NL {
+    padding: 0 0 0 240px;
+    font-size: 14px;
+}
+.ftven_formabo_subscription_choice{
+    color: #bebebe;
+}
+
+
+.ftven_formabo_option_choose_txt {
+    float: left;
+}
+
+.ftven_formabo_option_choose_txt p{
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+
+.ftven_formabo_checkbox {
+    padding-top: 24px;
+}
+
+#ftven_formabo_option2_cb_ok, #ftven_formabo_option1_cb_ok {
+    color: #44b73f;
+}
+
+#ftven_formabo_footer {
+    height: 48px;
+    width: 680px;
+}
+#ftven_formabo_message {
+    color: #fff;
+    font-weight: bold;
+    height: 48px;
+    text-align: center;
+    width: 680px;
+}
+.ftven_error_message {
+    background: #d81d1d;
+}
+.ftven_success_message {
+    background: #44b73f;
+    line-height: 48px;
+}
+#ftven_formabo_message p {
+    line-height: 48px;
+    clear: both;
+}
+.ftven_formabo_email_error {
+    border-color: #d81d1d;
+}
+
+.ftven_formabo_separator {
+    background-color: #dddddd;
+    border: 0;
+    height: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 90%;
+}
+
+/* - dialog specific rules - */
+
+.ui-widget-content {
+    background: none !important;
+    border: 0 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    display: none;
+}
+.ui-dialog #ftven_formabo {
+    overflow: hidden;
+}
+
+.ui-widget-overlay {
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+
+.ftven_formabo_checkbox input[type=checkbox]:not(old){
+    margin    : 0;
+    padding   : 0;
+    font-size : 16px;
+    opacity   : 0;
+}
+
+.ftven_formabo_checkbox input[type=checkbox]:not(old) + label{
+    display      : inline-block;
+
+}
+
+.ftven_formabo_checkbox input[type=checkbox]:not(old) + label > span{
+    display          : inline-block;
+    width            : 24px;
+    height           : 24px;
+    border           : 1px solid rgb(192,192,192);
+
+
+    vertical-align   : bottom;
+}
+
+.ftven_formabo_checkbox input[type=checkbox]:not(old):checked + label > span:before{
+    content     : '✓';
+    display     : block;
+    color       : rgb(153,204,102);
+    font-size   : 19px;
+    text-align  : center;
+}
+
+
+
+
+
+
+
