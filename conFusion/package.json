@@ -1,0 +1,17 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "Angular Tutorial from Coursera",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maftouh",
+  "license": "ISC"
+}
