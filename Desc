@@ -16,3 +16,11 @@ Config auto complete on NetBeans (Emmet)
 "produit_print_title": ""
 
 
+
+
+Identifier le besoin de documentation pour la refonte graphique de la popin NL :
+ - Est-ce que tu as bien à disposition toute la documentation technique pour pouvoir faire cette refonte
+- Voici la documentation fonctionnelle sur la popin : http://confluence.ftven.net/display/MPC/Mise+en+place+de+la+Popin+NL
+- Les maquettes arriveront dans un nouveau ticket
+- Pour toute question fonctionnelle me demander (Laurianne)
+- Pour toute question technique, demander à Thomas
