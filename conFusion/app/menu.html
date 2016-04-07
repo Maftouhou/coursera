@@ -64,9 +64,9 @@
 <script src="../bower_components/angular/angular.min.js"></script>
 
     <script>
-        var app = angular.module('confusionApp',[]);
-            
-            app.controller('menuController', function() {
+        var app = angular.module('confusionApp',[])
+
+            .controller('menuController', function() {
                 var dishes=[
                             {
                                name:'Uthapizza',
@@ -129,11 +129,11 @@
             });
 
             app.controller('test', function(){
-            var testCtrl = 'This is a test' ;
-           
-            this.testCtrl = testCtrl;
-//            return testCtrl;
-        });
+              var testCtrl = 'This is a test' ;
+             
+              this.testCtrl = testCtrl;
+  //            return testCtrl;
+            });
     </script>
 
 </body>
