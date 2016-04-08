@@ -112,6 +112,57 @@
                         }
                     ]
                 }
+            },
+            
+            watch: {
+                copy: {
+                    files: [ 'app/**', '!app/**/*.css', '!app/**/*.js'],
+                    tasks: [ 'build' ]
+                },
+                
+                scripts: {
+                    files: ['app/scripts/app.js'],
+                    tasks:[ 'build']
+                },
+                
+                styles: {
+                    files: ['app/styles/mystyles.css'],
+                    tasks:['build']
+                },
+                
+                livereload: {
+                    options: {
+                        livereload: '<%= connect.option.livereload %>'
+                    },
+                    
+                    files: [
+                        'paa/{,*/}*.html',
+                        '.tmp/styles/{,*/}*.css',
+                        'app/images/{,*/}*.{png, jpg, jpeg, gif, webp, svg}'
+                    ]
+                }
+            },
+            
+            connect: {
+                option: {
+                    port: 9000,
+                    // Chage this to 0.0.0.0. to access the server outside
+                    hostname: 'localhost',
+                    lovereload: 35729
+                }, 
+                
+                dist: {
+                    option: {
+                        open: true,
+                        base: {
+                            path: 'dist',
+                            option: {
+                                index: 'menu.html',
+                                maxAge: 300000
+                            }
+                        }
+                    }
+                }
             }
         });
 
