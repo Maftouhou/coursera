@@ -27,6 +27,12 @@ GRANT Task runner
   {} : take in count any of the elements separeted by comma, that much; 
   ! : if it doesn't mutch the pattern, exclude from consideration;
 
+Build-in use-main package
+------------------------------
+enclose css links with the build css comments to create a one file .main.css
+<!-- build:css   -->
+
+
 
 Some Grunt methodes : 
 ----------------------------
@@ -41,9 +47,34 @@ Some Grunt methodes :
 Grunt-usemin : configure css and js tasks
   - Grunt-usemin workflow : useminPrepare=>concat=>cssmin=>uglify=>filerev=>usemin
   - filerev : force uncaches files (css and js) in order to suply the newest version of file, if any modification made. it provide an automatic generated code on the name of the file at any time the file is resived
+  - filerev options : encode 'Utf8', algoritm 'md5', length '20';
+
+
+
+Grunt Task Modules
+---------------------------
+- The JSHint : used to configure tasks for JS Files
+Installation : npm install grunt-contrib-jshint --save-dev
+- The JSHint Stylish : Installation : npm i jshint-stylish --save-dev
+- The Time grunt : keep track of the time that a task take and generate a statistic at the end of the grunt running.  
+installation : npm i grunt-time --s-d
+- the jit grunt (just in time) : look at the node_module and import any modure required for the grunt running process.
+installation : npm i jit-grunt --save-dev
+
+
+
+Installing GRUNT 
+----------------------------
+GLOGAL INSTALLATION : npm i -g grunt-cli
+LOCAL INSTALLATION : npm i grunt --save-dev
+
+
+
 
 
 
 Technical word : 
 ===============================
 - Static code analysis : 
+
+

@@ -27,6 +27,12 @@ GRANT Task runner
   {} : take in count any of the elements separeted by comma, that much; 
   ! : if it doesn't mutch the pattern, exclude from consideration;
 
+Build-in usemin package
+------------------------------
+enclose css links with the build css comments to create a one file .main.css
+<!-- build:css   -->
+
+
 
 Some Grunt methodes : 
 ----------------------------
@@ -45,6 +51,31 @@ Grunt-usemin : configure css and js tasks
 
 
 
+Grunt Task Modules
+---------------------------
+- The JSHint : used to configure tasks for JS Files
+Installation : npm install grunt-contrib-jshint --save-dev
+- The JSHint Stylish : Installation : npm i jshint-stylish --save-dev
+- The Time grunt : keep track of the time that a task take and generate a statistic at the end of the grunt running.  
+installation : npm i grunt-time --s-d
+- the jit grunt (just in time) : look at the node_module and import any modure required for the grunt running process.
+installation : npm i jit-grunt --save-dev
+
+copy : installation : npm i grunt-contrib-copy --save-dev
+
+
+Installing GRUNT 
+----------------------------
+GLOGAL INSTALLATION : npm i -g grunt-cli
+LOCAL INSTALLATION : npm i grunt --save-dev
+
+
+
+
+
+
 Technical word : 
 ===============================
 - Static code analysis : 
+
+
