@@ -178,6 +178,13 @@
            'filerev',
            'usemin'
         ]);
+        
+        //Grunt Serve task
+        grunt.registerTask('serve', [
+            'build',
+            'connect:dist',
+            'watch'
+        ]);
 
         //Grunt Build tasks
         grunt.registerTask('default', [
